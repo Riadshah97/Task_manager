@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+{% block head_title %}Home{% endblock head_title %}
+{% block content %}
+<h1 class="text-center" >Task_Manager</h1> 
+    <form method="get" action="{#% url 'task_search' %#}">
+        {{ form.as_p }}
+        <button type="submit">Search</button>
+    </form>
+    {% if object_list %}
+    <div class="container row">
+        {% for task in object_list %}
+        <div class="col-4">
+            <div class="card" style="width: 18rem;">
+                <h5 class="card-header">{{ task.title }}</h5>
+                <div class="card-body">
+                    <p class="card-text">
+                        {{ task.description }}
+                    </p>
+                    <div>
+                        <a href="#" class="btn btn-primary">View</a>
+                        <a href="#" class="btn btn-primary">Edit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+    {% endif %}
+{% endblock content %}
