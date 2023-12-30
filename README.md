@@ -2,7 +2,7 @@
 
 # Your Project Name
 
-Brief project description goes here.
+A brief project description is here.
 
 ## Table of Contents
 
@@ -74,15 +74,15 @@ If you'd like to contribute, please follow our [Contributing Guidelines](CONTRIB
 
 
 #####################################################
-### VIRTUAL ENVIROMENT
+### VIRTUAL ENVIRONMENT
 Setting up environment variables in a Django project is a common practice to manage configuration settings that may vary between environments (e.g., development, staging, production). Here's how you can set up environment variables and use them in a Django project:
 
 If you don't have virtualenv installed, you can install it using pip:
-pip install virtualenv
-python -m venv venv
-python3 -m venv venv
-venv\Scripts\activate
-source venv/bin/activate
+#pip install virtualenv
+#python -m venv venv,
+#python3 -m venv venv,
+#venv\Scripts\activate
+#source venv/bin/activate
 
 You can use these variables anywhere in your Django project as you would use regular Python variables
 With this setup, you can easily manage your configuration settings, and you won't need to hardcode sensitive information or environment-specific configurations in your code.
